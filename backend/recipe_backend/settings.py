@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # Allowing React development server
-    'https://django-react-bkt-1.s3.amazonaws.com',
+    'http://django-react-bkt-1.s3-website-us-east-1.amazonaws.com',
 ]
 
 MIDDLEWARE = [
