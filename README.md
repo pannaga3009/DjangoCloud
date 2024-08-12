@@ -15,8 +15,7 @@ This project demonstrates the development of a Recipe Management App using a Rea
   - [Deploying Frontend to AWS S3](#deploying-frontend-to-aws-s3)
   - [Deploying Backend to AWS EC2](#deploying-backend-to-aws-ec2)
 - [API Endpoints](#api-endpoints)
-- [Architecture Overview](#architecture-overview)
-- [Acknowledgements](#acknowledgements)
+
 
 ## Project Overview
 
@@ -61,6 +60,7 @@ simple-recipe-app/
 │   ├── package.json
 │   └── ...
 └── README.md
+```
 
 # Setup Instructions
 
@@ -75,15 +75,17 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
+
+## Frontend Setup (React.js)
+```bash
 cd frontend
 npm install
 npm start
 ```
 
-2. **Deployment Instructions
-Deploying Frontend to AWS S3
+## Deploying Frontend to AWS S3
 Build the React app for production:
-pload the build files to an S3 bucket:
+upload the build files to an S3 bucket:
 
 Create an S3 bucket using the AWS Management Console.
 Upload the contents of the build directory to the bucket.
@@ -94,7 +96,7 @@ Configure the S3 bucket for static website hosting:
 Set the index document to index.html.
 Ensure that all files are publicly accessible.
 
-3. **Deploying Backend to AWS EC2
+## Deploying Backend to AWS EC2
    Launch an EC2 instance:
 
 Use the "Ubuntu Server 20.04 LTS" AMI.
