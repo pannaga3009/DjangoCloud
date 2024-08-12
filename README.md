@@ -87,31 +87,31 @@ npm start
 Build the React app for production:
 upload the build files to an S3 bucket:
 
-Create an S3 bucket using the AWS Management Console.
-Upload the contents of the build directory to the bucket.
-Configure the bucket for static website hosting.
-Set the bucket policy to allow public access.
-Configure the S3 bucket for static website hosting:
+- Create an S3 bucket using the AWS Management Console.
+- Upload the contents of the build directory to the bucket.
+- Configure the bucket for static website hosting.
+- Set the bucket policy to allow public access.
 
-Set the index document to index.html.
-Ensure that all files are publicly accessible.
+**Configure the S3 bucket for static website hosting**:
+
+- Set the index document to index.html.
+- Ensure that all files are publicly accessible.
 
 ## Deploying Backend to AWS EC2
    Launch an EC2 instance:
 
-Use the "Ubuntu Server 20.04 LTS" AMI.
-Select the t2.micro instance type.
-Configure the security group to allow HTTP (port 80) and SSH (port 22).
-Connect to the EC2 instance and set up the environment
-Clone the project and set up the virtual environment
-Set up Gunicorn and Nginx for production
+- Use the "Ubuntu Server 20.04 LTS" AMI.
+- Select the t2.micro instance type.
+- Configure the security group to allow HTTP (port 80) and SSH (port 22).
+- Connect to the EC2 instance and set up the environment.
+- Clone the project and set up the virtual environment.
+- Set up Gunicorn and Nginx for production.
 
 ## API Endpoints
-GET /api/recipes/: Fetch all recipes.
-POST /api/recipes/: Add a new recipe.
-PUT /api/recipes/
-/: Update an existing recipe.
-DELETE /api/recipes/
-/: Delete a recipe.
+- **GET** /api/recipes/: Fetch all recipes.
+- **POST** /api/recipes/: Add a new recipe.
+- **PUT** /api/recipes/<id>: Update a recipe.
+- **DELETE** /api/recipes/<id>/: Delete a recipe.
+
 
 
